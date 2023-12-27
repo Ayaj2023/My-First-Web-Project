@@ -1,0 +1,504 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+/* ----------------Universal and common codes---------------- */
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-weight: 300;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+button {
+    border: none;
+    outline: none;
+}
+
+.on {
+    background-color: #262626 !important;
+}
+
+/* starting the header section */
+header .banner {
+    background: url("img/intro-bg.jpg") no-repeat center center;
+    background-size: cover;
+    background-color: #333;
+    width: 100%;
+    height: 100vh;
+    display: table;
+
+}
+
+header nav {
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+}
+
+header nav .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 11px 0px;
+}
+
+.nav-logo {
+    font-family: "Dancing Script", sans-serif;
+    color: #8eb640;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+nav ul li {
+    float: left;
+    padding: 0px 18px;
+    font-size: 14px;
+}
+
+nav ul li a {
+    color: #eee;
+}
+
+header nav ul li .active {
+    color: #8eb640;
+}
+
+nav ul li a:hover {
+    color: #8eb640;
+}
+
+.banner .container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    height: 110vh;
+    color: #fff;
+    padding-bottom: 140px;
+}
+
+.banner .overlay {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.banner h1 {
+    font-family: "Dancing Script", sans-serif;
+    font-size: 140px;
+    font-weight: 500;
+}
+
+.banner p {
+    font-size: 32px;
+    padding: 20px 0px;
+    font-weight: 300;
+}
+
+.banner button {
+    background-color: #8eb640;
+    color: #fff;
+    padding: 15px 25px;
+    text-transform: uppercase;
+    margin-top: 20px;
+    font-weight: 500;
+    transition: 0.3S;
+}
+
+.banner button:hover {
+    background-color: rgb(98, 141, 15);
+}
+
+/* --------------staring the about section----------------- */
+#about {
+    padding: 100px 0px;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 70px;
+}
+
+img {
+    border: 1px solid #cec4c4;
+    padding: 3px;
+}
+
+.about-right {
+    position: relative;
+}
+
+.about-right h1 {
+    font-weight: 500;
+    padding-bottom: 60px;
+}
+
+.about-right h1::after {
+    content: "";
+    width: 70px;
+    height: 2px;
+    background-color: #8eb640;
+    position: absolute;
+    top: 60px;
+    left: 0;
+}
+
+.about-right p {
+    color: #cec4c4;
+    line-height: 25px;
+    font-size: 16px;
+}
+
+.about-right h2 {
+    padding: 20px 0px 15px 0px;
+    font-weight: 500;
+}
+
+/* ------------ Starting the menu section -------------- */
+.menu-header {
+    background: url("img/menu-bg.jpg") no-repeat center center;
+    background-size: cover;
+    height: 50vh;
+    color: #fff;
+    margin-bottom: 50px;
+    background-attachment: fixed;
+}
+
+.fixed-bg {
+    position: relative;
+}
+
+.fixed-bg .overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.fixed-bg h1 {
+    text-transform: uppercase;
+    padding-bottom: 60px;
+}
+
+.fixed-bg h1::after {
+    content: "";
+    width: 60px;
+    height: 2px;
+    background-color: #8eb640;
+    position: absolute;
+    top: 150px;
+    left: 600px;
+}
+
+.menu-header p {
+    font-size: 22px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.menu-body h1 {
+    font-weight: 500;
+    font-size: 25px;
+    text-align: center;
+    padding: 30px 0px;
+}
+
+.menu-body .row {
+    padding: 20px 0px;
+}
+
+.menu-items {
+    position: relative;
+}
+
+.menu-items h1::after {
+    content: "";
+    width: 80px;
+    height: 2px;
+    background-color: #8eb640;
+    position: absolute;
+    top: 70px;
+    left: 218px;
+}
+
+.menu-items {
+    width: 45%;
+}
+
+.item {
+    width: 100%;
+    padding: 15px 0px;
+}
+
+.item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px dashed #333;
+}
+
+.item-body p {
+    color: #cec4c4;
+    font-size: 15px;
+    padding: 10px 0px;
+    font-weight: 200;
+    font-style: italic;
+}
+
+/* -------------- Starting the gallery section ------------- */
+.gallery-header {
+    background: url("img/gallery-bg.jpg") no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 50vh;
+    color: #fff;
+    margin: 50px 0px;
+}
+
+.gallery-nav {
+    text-align: center;
+}
+
+.gallery-nav button {
+    color: #333;
+    padding: 10px 20px;
+    margin: 10px 10px 40px 10px;
+}
+
+.gallery-nav .active {
+    background-color: #8eb640;
+    color: #fff;
+}
+
+.gallery-nav button:hover {
+    background-color: #8eb640;
+    color: #fff;
+}
+
+.gallery-dishes {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 25px;
+}
+
+.dish .dish-desc {
+    position: absolute;
+    bottom: -5px;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #fff;
+    width: 100%;
+    height: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.dish-img:hover .dish-desc {
+    height: 98%;
+}
+
+.dish-img img {
+    width: 100%;
+    cursor: pointer;
+}
+
+/* ------------------ Starting the chefs section ---------------- */
+#chefs {
+    background: url("img/team-bg.jpg") no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-top: 80px;
+    color: white;
+}
+
+.chefs-header {
+    text-align: center;
+    padding: 40px;
+    position: relative;
+}
+
+.chefs-header h1 {
+    text-transform: uppercase;
+    padding-bottom: 60px;
+}
+
+.chefs-header h1::after {
+    content: "";
+    width: 80px;
+    height: 2px;
+    background-color: #fff;
+    top: 90px;
+    left: 520px;
+    position: absolute;
+}
+
+#chefs .overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.chefs-body {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 50px 0px 80px 0px;
+}
+
+.chef {
+    text-align: center;
+}
+
+.chef h2 {
+    padding: 10px 0px;
+    font-weight: 300;
+    font-size: 25px;
+}
+
+.chef p {
+    color: #cec4c4;
+    font-size: 14px;
+    width: 80%;
+    line-height: 20px;
+    margin: auto;
+}
+
+/* ----------------- Starting the contact section ---------------- */
+#contact {
+    background-color: #eee;
+}
+
+.contact-call {
+    padding: 90px 0px;
+    text-align: center;
+    background-color: #8eb640;
+    color: #fff;
+    font-weight: 300;
+}
+
+.contact-header {
+    padding: 80px 0px 50px 0px;
+    position: relative;
+    text-align: center;
+}
+
+.contact-header h1 {
+    text-transform: uppercase;
+    padding-bottom: 60px;
+}
+
+.contact-header h1::after {
+    content: "";
+    width: 100px;
+    height: 2px;
+    background-color: #8eb640;
+    position: absolute;
+    top: 140px;
+    left: 515px;
+}
+
+.contact-header p {
+    color: #cec4c4;
+    font-size: 20px;
+}
+
+form {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    width: 70%;
+    margin: 50px auto 0px;
+    gap: 15px;
+}
+
+#name {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+#email {
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+
+#msg {
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+
+form input,
+form textarea {
+    border: none;
+    outline: none;
+    padding: 8px 5px;
+    border: 1px solid rgb(199, 191, 191);
+}
+
+.form-btn {
+    background-color: #8eb640;
+    outline: none;
+    border: none;
+    padding: 15px 0px;
+    text-transform: uppercase;
+    color: #fff;
+    grid-column-start: 4;
+    grid-column-end: 5;
+}
+
+.contact-more {
+    background-color: #333;
+    color: #fff;
+    padding: 50px 100px;
+}
+
+.contact-more .container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 40px;
+    text-align: center;
+}
+
+.s-contact p {
+    line-height: 30px;
+    font-weight: lighter;
+    color: #cec4c4;
+}
+
+p.s-contact-head {
+    color: #8eb640;
+    padding: 10px 0px;
+}
+
+/* ------------- Starting the footer section -------------- */
+footer {
+    padding: 40px;
+    color: #fff;
+    background-color: #8eb640;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer-social a {
+    color: #fff;
+    padding: 0px 25px;
+    font-size: 20px;
+}
+
+.footer-desc {
+    padding-top: 40px;
+    font-size: 15px;
+    font-weight: 300;
+}
